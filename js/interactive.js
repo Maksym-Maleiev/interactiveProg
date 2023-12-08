@@ -21,3 +21,4 @@ var printMessage = function () {
 };
 
 var intervalId = setInterval(printMessage, 1000);
+clearInterval(intervalId);
