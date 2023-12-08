@@ -10,3 +10,4 @@ var doHomeworkAlarm = function () {
 };
 
 var timeoutId = setTimeout(doHomeworkAlarm, 60000);
+clearTimeout(timeoutId);
