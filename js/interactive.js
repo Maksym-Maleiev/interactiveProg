@@ -14,3 +14,7 @@ clearTimeout(timeoutId);
 
 // -----------------
 var counter = 1;
+
+var printMessage = function () {
+  
+};
