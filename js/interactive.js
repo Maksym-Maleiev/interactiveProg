@@ -16,5 +16,5 @@ clearTimeout(timeoutId);
 var counter = 1;
 
 var printMessage = function () {
-  
+  console.log("You have been staring at your console for " + counter + " seconds");
 };
