@@ -2,4 +2,4 @@ var timeUp = function () {
   alert("Time's up");
 };
 
-setTimeout(timeUp, 3000);
+setTimeout(timeUp, 5000);
