@@ -34,4 +34,6 @@ var printMessage = function () {
 };
 
 var intervalId = setInterval(printMessage, 5000);
-// clearInterval(intervalId);
+clearInterval(intervalId);
+
+// ------------------
