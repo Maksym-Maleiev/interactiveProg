@@ -1,0 +1,1 @@
+var leftOffset = 0;
