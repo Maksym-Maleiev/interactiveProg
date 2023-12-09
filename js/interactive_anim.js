@@ -3,7 +3,7 @@ var leftOffset = 0;
 var moveHeading = function () {
   $("#heading").offset({ left: leftOffset });
 
-  leftOffset += 4;
+  leftOffset++;
 
   if (leftOffset > 200) {
     leftOffset = 0;
