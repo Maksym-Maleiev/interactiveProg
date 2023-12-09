@@ -1,12 +1,12 @@
-var leftOffset = 0;
+var leftOffset = 200;
 
 var moveHeading = function () {
   $("#heading").offset({ left: leftOffset });
 
   leftOffset++;
 
-  if (leftOffset > 200) {
-    leftOffset = 0;
+  if (leftOffset > 400) {
+    leftOffset = 200;
   }
 };
 
