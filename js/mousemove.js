@@ -6,7 +6,7 @@
 // });
 
 // #1: follow the clicks
-$("html").clickHandler(function (event) {
+$("html").mousemove(function (event) {
   $("#heading").click({
     left: event.pageX,
     top: event.pageY,
