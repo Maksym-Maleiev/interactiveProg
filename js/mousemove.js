@@ -7,7 +7,7 @@
 
 // #1: follow the clicks
 $("html").clickHandler(function (event) {
-  $("#heading").offset({
+  $("#heading").click({
     left: event.pageX,
     top: event.pageY,
   });
