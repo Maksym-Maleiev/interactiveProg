@@ -6,4 +6,6 @@
 // });
 
 // #1: follow the clicks
-$("html").mousemove(function (event) {});
+$("html").mousemove(function (event) {
+  $("#heading").offset({});
+});
