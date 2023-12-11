@@ -4,3 +4,5 @@
 //     top: event.pageY,
 //   });
 // });
+
+// #1: follow the clicks
