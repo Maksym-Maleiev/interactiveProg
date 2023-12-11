@@ -7,8 +7,5 @@
 
 // #1: follow the clicks
 $("html").mousemove(function (event) {
-  $("#heading").click({
-    left: event.pageX,
-    top: event.pageY,
-  });
+  $("#heading").click(event.pageX, event.pageY);
 });
