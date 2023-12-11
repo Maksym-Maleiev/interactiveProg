@@ -6,3 +6,4 @@
 // });
 
 // #1: follow the clicks
+$("html").mousemove(function (event) {});
