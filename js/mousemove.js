@@ -43,3 +43,5 @@ function moveHeadingVertical() {
 }; 
  
 setTimeout(moveHeadingVertical, 10);
+
+setInterval(moveHeadingVertical, 10);
