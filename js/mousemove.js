@@ -12,3 +12,5 @@ $("html").click(function (event) {
     top: event.pageY,
   });
 });
+
+// #2:
