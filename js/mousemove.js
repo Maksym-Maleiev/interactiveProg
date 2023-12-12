@@ -34,5 +34,11 @@ var topOffset = 0;
 
 function moveHeadingVertical() {
   $("#heading").topOffset({ top: topOffset });
+
+  topOffset++;
+
+  if (topOffset > 200) {
+    topOffset = 200;
+  }
 }; 
  
