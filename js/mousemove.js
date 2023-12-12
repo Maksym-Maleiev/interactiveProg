@@ -19,8 +19,8 @@ $("html").click(function (event) {
 var leftOffset = 0;
 var topOffset = 0;
 
-function moveHeading() {
-  $("#heading").offset({ left: leftOffset, top: topOffset});
+function moveHeadingGor() {
+  $("#heading").offset({ left: leftOffset});
 
   leftOffset++;
 
@@ -29,4 +29,6 @@ function moveHeading() {
   }
 };
 
-setInterval(moveHeading, 10);
+setInterval(moveHeadingGor, 10);
+
+function moveHeadingVer() { };
