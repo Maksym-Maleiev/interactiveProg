@@ -16,9 +16,4 @@ $("html").click(function (event) {
 */
 
 // #2:create your own animation
-$("html").click(function (event) {
-  $("#heading").offset({
-    left: event.pageX,
-    top: event.pageY,
-  });
-});
+var leftOffset = 0;
