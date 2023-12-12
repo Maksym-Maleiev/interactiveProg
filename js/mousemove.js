@@ -24,11 +24,15 @@ function moveHeading() {
 
   leftOffset++;
 
-  topOffset++;
-
   if (leftOffset > 200) {
     leftOffset = 200;
-  };
+  }
+
+  topOffset++;
+  
+  if (topOffset > 200) {
+    topOffset = 200; 
+  }
 };
 
 setInterval(moveHeading, 10);
