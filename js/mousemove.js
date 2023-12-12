@@ -41,5 +41,5 @@ function moveHeadingVer() {
     topOffset = 200
   }
 };
- 
+
 setInterval(moveHeadingVer, 10);
