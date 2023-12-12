@@ -42,3 +42,4 @@ function moveHeadingVertical() {
   }
 }; 
  
+setTimeout(moveHeadingVertical, 10);
