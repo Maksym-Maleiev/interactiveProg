@@ -33,12 +33,6 @@ var leftOffset = 0;
 
 $("html").moveHeading(function () {
   $("#heading").offset({
-    left: leftOffset
+
   });
-
-  leftOffset++;
-
-  if (leftOffset > 200) {
-    leftOffset = 200;
-  }
 });
