@@ -16,20 +16,6 @@ $("html").click(function (event) {
 */
 
 // #2:create your own animation
-var topOffset = 0;
-
-function moveHeadingVer() {
-  $("#heading").offset({ top: topOffset});
-
-  topOffset++;
-
-  if (topOffset > 200) {
-    topOffset = 200;
-  }
-};
-
-setTimeout(moveHeadingVer, 3000);
-
 var leftOffset = 0;
 
 function moveHeadingGor() {
@@ -43,3 +29,17 @@ function moveHeadingGor() {
 };
 
 setInterval(moveHeadingGor, 10);
+
+// var topOffset = 0;
+
+// function moveHeadingVer() {
+//   $("#heading").offset({ top: topOffset});
+
+//   topOffset++;
+
+//   if (topOffset > 200) {
+//     topOffset = 200;
+//   }
+// };
+
+// setInterval(moveHeadingVer, 10);
