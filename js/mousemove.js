@@ -31,4 +31,6 @@ function moveHeadingGor() {
 
 setInterval(moveHeadingGor, 10);
 
-function moveHeadingVer() { };
+function moveHeadingVer() {
+  $("#heading").offset({ top: topOffset });
+ };
