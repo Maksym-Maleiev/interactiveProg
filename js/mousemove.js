@@ -17,7 +17,6 @@ $("html").click(function (event) {
 
 // #2:create your own animation
 var leftOffset = 0;
-var topOffset = 0;
 
 function moveHeadingGorizontal() {
   $("#heading").offset({ left: leftOffset});
@@ -28,6 +27,8 @@ function moveHeadingGorizontal() {
     leftOffset = 200;
   }
 };
+
+var topOffset = 0;
 
 function moveHeadingVertical() {
   $("#heading").topOffset({top: topOffset})
