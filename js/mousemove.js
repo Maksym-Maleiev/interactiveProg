@@ -13,4 +13,4 @@ $("html").click(function (event) {
   });
 });
 
-// #2:
+// #2:create your own animation
