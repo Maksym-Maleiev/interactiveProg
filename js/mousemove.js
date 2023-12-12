@@ -28,10 +28,10 @@ function moveHeadingGorizontal() {
   }
 };
 
+setInterval(moveHeadingGorizontal, 10);
+
 var topOffset = 0;
 
 function moveHeadingVertical() {
   $("#heading").topOffset({top: topOffset})
  }; 
-
-setInterval(moveHeadingGorizontal, 10);
