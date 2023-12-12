@@ -28,4 +28,4 @@ function moveHeading() {
   }
 };
 
-setInterval(moveHeading, 30);
+setInterval(moveHeading, 10);
