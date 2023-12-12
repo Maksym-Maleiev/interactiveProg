@@ -33,5 +33,6 @@ setInterval(moveHeadingGorizontal, 10);
 var topOffset = 0;
 
 function moveHeadingVertical() {
-  $("#heading").topOffset({top: topOffset})
- }; 
+  $("#heading").topOffset({ top: topOffset });
+}; 
+ 
