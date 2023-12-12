@@ -18,11 +18,8 @@ $("html").click(function (event) {
 // #2:create your own animation
 var leftOffset = 0;
 
-function moveHeading(event) {
-  $("#heading").offset({
-    left: event.pageX,
-    top: event.pageY,
-    left: -(event.pageX),
-    top: -(event.pageY)
-  });
+function moveHeading() {
+  $("#heading").offset({left: leftOffset});
 };
+
+setInterval(moveHeading, 30);
