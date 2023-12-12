@@ -19,5 +19,5 @@ $("html").click(function (event) {
 var leftOffset = 0;
 
 function moveHeading() {
-  
+  $("#heading"){ };
 };
