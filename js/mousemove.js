@@ -29,9 +29,10 @@ $("html").click(function (event) {
 // };
 
 // setInterval(moveHeadingGor, 10);
+var leftOffset = 0;
 
 $("html").moveHeading(function () {
   $("#heading").offset({
-    
+    left: leftOffset
   });
 });
