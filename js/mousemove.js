@@ -6,11 +6,19 @@
 // });
 
 // #1: follow the clicks
+/*
 $("html").click(function (event) {
   $("#heading").offset({
     left: event.pageX,
     top: event.pageY,
   });
 });
+*/
 
 // #2:create your own animation
+$("html").click(function (event) {
+  $("#heading").offset({
+    left: event.pageX,
+    top: event.pageY,
+  });
+});
