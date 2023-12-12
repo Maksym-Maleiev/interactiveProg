@@ -16,30 +16,16 @@ $("html").click(function (event) {
 */
 
 // #2:create your own animation
-var leftOffset = 0;
+// var leftOffset = 0;
 
-function moveHeadingGor() {
-  $("#heading").offset({ left: leftOffset});
+// function moveHeadingGor() {
+//   $("#heading").offset({ left: leftOffset});
 
-  leftOffset++;
+//   leftOffset++;
 
-  if (leftOffset > 200) {
-    leftOffset = 200;
-  }
-};
+//   if (leftOffset > 200) {
+//     leftOffset = 200;
+//   }
+// };
 
-setInterval(moveHeadingGor, 10);
-
-var topOffset = 0;
-
-function moveHeadingVer() {
-  $("#heading").offset({ top: topOffset });
-
-  topOffset++;
-
-  if (topOffset > 200) {
-    topOffset = 200
-  }
-};
-
-setInterval(moveHeadingVer, 10);
+// setInterval(moveHeadingGor, 10);
