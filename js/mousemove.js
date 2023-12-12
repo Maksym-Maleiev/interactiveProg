@@ -17,7 +17,6 @@ $("html").click(function (event) {
 
 // #2:create your own animation
 var leftOffset = 0;
-var topOffset = 0;
 
 function moveHeadingGor() {
   $("#heading").offset({ left: leftOffset});
@@ -31,9 +30,10 @@ function moveHeadingGor() {
 
 setInterval(moveHeadingGor, 10);
 
+var topOffset = 0;
+
 function moveHeadingVer() {
   $("#heading").offset({ top: topOffset });
-  setTimeout(moveHeadingVer, 1000);
 
   topOffset++;
 
@@ -41,6 +41,5 @@ function moveHeadingVer() {
     topOffset = 200
   }
 };
-
-setInterval(moveHeadingVer, 10);
  
+setInterval(moveHeadingVer, 10);
