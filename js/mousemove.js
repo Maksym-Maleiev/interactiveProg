@@ -16,24 +16,17 @@ $("html").click(function (event) {
 */
 
 // #2:create your own animation
-// var leftOffset = 0;
-
-// function moveHeadingGor() {
-//   $("#heading").offset({ left: leftOffset});
-
-//   leftOffset++;
-
-//   if (leftOffset > 200) {
-//     leftOffset = 200;
-//   }
-// };
-
-// setInterval(moveHeadingGor, 10);
 var leftOffset = 0;
+var topOffset = 0;
 
-$("html").moveHeading(function () {
-  $("#heading").offset({
-    left: leftOffset
-  });
+function moveHeading() {
+  $("#heading").offset({ left: leftOffset, top: topOffset});
+
   leftOffset++;
-});
+
+  if (leftOffset > 200) {
+    leftOffset = 200;
+  }
+};
+
+setInterval(moveHeading, 10);
