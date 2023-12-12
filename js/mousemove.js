@@ -30,9 +30,8 @@ $("html").click(function (event) {
 
 // setInterval(moveHeadingGor, 10);
 
-$("html").click(function (event) {
+$("html").moveHeading(function () {
   $("#heading").offset({
-    left: event.pageX,
-    top: event.pageY,
+    
   });
 });
