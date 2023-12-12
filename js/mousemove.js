@@ -25,6 +25,7 @@ function moveHeading() {
 
   if (leftOffset > 200) {
     leftOffset = 200;
+  };
 };
 
 setInterval(moveHeading, 10);
