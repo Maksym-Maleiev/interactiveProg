@@ -20,6 +20,9 @@ var leftOffset = 0;
 
 function moveHeading(event) {
   $("#heading").offset({
-   
+    left: event.pageX,
+    top: event.pageY,
+    left: -(event.pageX),
+    top: -(event.pageY)
   });
 };
