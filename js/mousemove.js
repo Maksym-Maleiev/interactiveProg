@@ -38,6 +38,8 @@ function moveHeading() {
     topOffset = 200;
   } else if (topOffset < 200) {
     topOffset = 0;
+  } else {
+    leftOffset = 0;
   }
 };
 
