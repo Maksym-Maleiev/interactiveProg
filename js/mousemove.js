@@ -25,28 +25,14 @@ function moveHeading() {
   leftOffset++;
 
   if (leftOffset > 200) {
-    leftOffset = 200;
+    leftOffset = 0;
   }
 
   topOffset++;
 
-  if (topOffset > 200) {
-    topOffset = 200;
+  if (topOffset < 200) {
+    topOffset = 0;
   }
 };
 
-setInterval(moveHeadingGor, 10);
-
-// var topOffset = 0;
-
-// function moveHeadingVer() {
-//   $("#heading").offset({ top: topOffset});
-
-//   topOffset++;
-
-//   if (topOffset > 200) {
-//     topOffset = 200;
-//   }
-// };
-
-// setInterval(moveHeadingVer, 10);
+setInterval(moveHeading, 10);
