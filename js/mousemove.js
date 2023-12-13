@@ -23,7 +23,8 @@ function moveHeading() {
   $("#heading").offset({ left: leftOffset, top: topOffset});
 
   for (leftOffset = 0; leftOffset < 200; leftOffset++){
+    setInterval(moveHeading, 10);
  }
 };
 
-setInterval(moveHeading, 10);
+
