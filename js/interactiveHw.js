@@ -13,7 +13,7 @@ var leftOffset = 0;
 var topOffset = 0;
 
 function moveHeading() {
-  $("#heading").offset({ left: leftOffset, top: topOffset});
+  $("#heading").offset({ left: leftOffset, top: topOffset });
 
   leftOffset++;
 
@@ -28,6 +28,8 @@ function moveHeading() {
   if (topOffset > 200) {
     topOffset = 200;
   }
-};
+
+  leftOffset--;
+}
 
 setInterval(moveHeading, 10);
