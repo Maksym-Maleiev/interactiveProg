@@ -42,4 +42,4 @@ function moveHeadingVer() {
   }
 };
 
-setInterval(moveHeadingVer, 10);
+setTimeout(moveHeadingVer, 2000);
