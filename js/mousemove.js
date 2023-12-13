@@ -16,13 +16,10 @@ $("html").click(function (event) {
 */
 
 // #2:create your own animation
-var leftOffset = 0;
-var topOffset = 0;
-
 function moveHeading() {
   $("#heading").offset({ left: leftOffset, top: topOffset});
 
-  for (leftOffset = 0; leftOffset < 200; leftOffset++){
+  for (var leftOffset = 0; leftOffset < 200; leftOffset++){
  }
 };
 
