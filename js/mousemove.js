@@ -26,14 +26,14 @@ function moveHeading() {
 
   if (leftOffset > 200) {
     leftOffset = 200;
+  } else {
+    topOffset = 0;
   }
 
   topOffset++;
 
   if (topOffset > 200) {
     topOffset = 200;
-  } else {
-    leftOffset = 0;
   }
 };
 
