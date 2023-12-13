@@ -29,17 +29,17 @@ function moveHeading() {
     topOffset = 200;
   }
 
-  topOffset--;
+  // topOffset--;
 
-  if (topOffset < 200) {
-    topOffset = 0;
-  }
+  // if (topOffset < 200) {
+  //   topOffset != 200;
+  // }
 
-  leftOffset--;
+  // leftOffset--;
 
-  if (leftOffset < 200) {
-    leftOffset = 0;
-  }
+  // if (leftOffset < 200) {
+  //   leftOffset != 200;
+  // }
 }
 
 setInterval(moveHeading, 10);
