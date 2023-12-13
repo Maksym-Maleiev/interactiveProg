@@ -30,16 +30,16 @@ function moveHeadingGor() {
 
 setInterval(moveHeadingGor, 10);
 
-// var topOffset = 0;
+var topOffset = 0;
 
-// function moveHeadingVer() {
-//   $("#heading").offset({ top: topOffset});
+function moveHeadingVer() {
+  $("#heading").offset({ top: topOffset});
 
-//   topOffset++;
+  topOffset++;
 
-//   if (topOffset > 200) {
-//     topOffset = 200;
-//   }
-// };
+  if (topOffset > 200) {
+    topOffset = 200;
+  }
+};
 
-// setInterval(moveHeadingVer, 10);
+setInterval(moveHeadingVer, 10);
