@@ -34,8 +34,26 @@ function moveHeading() {
 
   if (topOffset > 200) {
     topOffset = 200;
-  } else if (topOffset === 200) {
+  }
+};
+
+setInterval(moveHeading, 10);
+
+function moveHeading() {
+  $("#heading").offset({ left: leftOffset, top: topOffset});
+
+  leftOffset--;
+
+  if (leftOffset < 200) {
     leftOffset = 0;
+  } else {
+    topOffset = 200;
+  }
+
+  topOffset--;
+
+  if (topOffset < 200) {
+    topOffset = 0;
   }
 };
 
