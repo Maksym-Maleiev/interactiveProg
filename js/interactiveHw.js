@@ -29,18 +29,17 @@ function moveHeading() {
     topOffset = 200;
   }
 
-  leftOffset--;
+  topOffset--;
 
-  if (leftOffset != 200) {
-    leftOffset = 0;
+  if (topOffset < 200) {
+    topOffset = 0;
   }
 
-  // topOffset++;
+  leftOffset--;
 
-  // if (leftOffset === 0) {
-  //   topOffset != 200;
-  //   topOffset--;
-  // }
+  if (leftOffset < 200) {
+    leftOffset = 0;
+  }
 }
 
 setInterval(moveHeading, 10);
