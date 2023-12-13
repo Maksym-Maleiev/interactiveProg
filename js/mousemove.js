@@ -18,8 +18,6 @@ $("html").click(function (event) {
 // #2:create your own animation
 var leftOffset = 0;
 var topOffset = 0;
-var rightOffset = 200;
-var downOffset = 200;
 
 function moveHeading() {
   $("#heading").offset({ left: leftOffset, top: topOffset});
@@ -36,12 +34,6 @@ function moveHeading() {
 
   if (topOffset > 200) {
     topOffset = 200;
-  }
-
-  rightOffset--;
-
-  if (rightOffset < 200) {
-    rightOffset = 0;
   }
 };
 
