@@ -32,6 +32,10 @@ function moveHeading() {
       direction = "left";
     }
   } else if (direction === "left") {
+    if (offset < 200) {
+      offset = 200;
+      direction = "top";
+    }
   }
 }
 
