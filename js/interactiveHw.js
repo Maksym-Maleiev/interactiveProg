@@ -24,13 +24,14 @@ function moveHeading() {
       direction = "down";
     }
   } else if (direction === "down") {
-    $("heading").offset({ top: offset });
+    $("#heading").offset({ top: offset });
 
     offset++;
     if (offset > 200) {
-      offset = 0;
+      offset = 200;
       direction = "left";
     }
+  } else if (direction === "left") {
   }
 }
 
