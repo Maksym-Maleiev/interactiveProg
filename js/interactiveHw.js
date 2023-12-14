@@ -35,7 +35,7 @@ function moveHeading() {
     $("#heading").offset({ left: offset });
 
     offset--;
-    if (offset < 200) {
+    if (offset < 0) {
       offset = 200;
       direction = "top";
     }
@@ -43,9 +43,9 @@ function moveHeading() {
     $("#heading").offset({ top: offset });
 
     offset--;
-    if (offset < 200) {
+    if (offset < 0) {
       offset = 0;
-      direction = "left";
+      direction = "right";
     }
   }
 }
