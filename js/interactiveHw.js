@@ -12,9 +12,9 @@ $("html").click(function (event) {
 var offset = 0;
 var direction = "right";
 
-function moveHeading() {
-  $("#heading").offset({ left: offset, top: offset });
+$("#heading").offset({ left: offset, top: offset });
 
+function moveHeading() {
   if (direction === "right") {
     $("#heading").offset({ left: offset });
 
