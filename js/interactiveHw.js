@@ -35,13 +35,6 @@ function moveHeading() {
     leftOffset = 0;
     leftOffset--;
   }
-
-  topOffset++;
-
-  if (topOffset < 200) {
-    topOffset = 0;
-    topOffset--;
-  }
 }
 
 setInterval(moveHeading, 10);
