@@ -29,7 +29,7 @@ function moveHeading() {
     topOffset = 200;
   }
 
-  leftOffset--;
+  leftOffset++;
 }
 
 setInterval(moveHeading, 10);
