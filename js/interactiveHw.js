@@ -30,6 +30,10 @@ function moveHeading() {
   }
 
   leftOffset++;
+
+  if (leftOffset > 300) {
+    leftOffset = 300;
+  }
 }
 
 setInterval(moveHeading, 10);
