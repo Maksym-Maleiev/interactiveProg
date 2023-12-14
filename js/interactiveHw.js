@@ -33,12 +33,16 @@ function moveHeading() {
     }
   } else if (direction === "left") {
     $("#heading").offset({ left: offset });
+
+    offset--;
     if (offset < 200) {
       offset = 200;
       direction = "top";
     }
   } else if (direction === "top") {
     $("#heading").offset({ top: offset });
+
+    offset--;
     if (offset < 200) {
       offset = 0;
       direction = "left";
