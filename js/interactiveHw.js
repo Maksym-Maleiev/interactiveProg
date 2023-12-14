@@ -9,12 +9,11 @@ $("html").click(function (event) {
 */
 
 // #2:create your own animation
-var leftOffset = 0;
-var topOffset = 0;
+var offset = 0;
 var direction = "right";
 
 function moveHeading() {
-  $("#heading").offset({ left: leftOffset, top: topOffset });
+  $("#heading").offset({ left: offset, top: offset });
 
   if (direction === "right") {
     $("#heading").offset({ left: leftOffset });
