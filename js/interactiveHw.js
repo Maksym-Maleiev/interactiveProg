@@ -11,34 +11,15 @@ $("html").click(function (event) {
 // #2:create your own animation
 var leftOffset = 0;
 var topOffset = 0;
+var direction = "right";
 
 function moveHeading() {
   $("#heading").offset({ left: leftOffset, top: topOffset });
 
-  leftOffset++;
+  if (direction === "right") {
+    $("#heading").offset({ left: leftOffset });
 
-  if (leftOffset > 200) {
-    leftOffset = 200;
-  } else {
-    topOffset = 0;
-  }
-
-  topOffset++;
-
-  if (topOffset > 200) {
-    topOffset = 200;
-  }
-
-  leftOffset--;
-
-  if (leftOffset < 0) {
-    topOffset = 200;
-  }
-
-  topOffset--;
-
-  if (topOffset < 0) {
-    leftOffset = 0;
+    leftOffset++;
   }
 }
 
