@@ -25,6 +25,11 @@ function moveHeading() {
     }
   } else if (direction === "down") {
     $("heading").offset({ top: topOffset });
+
+    topOffset++;
+    if (topOffset > 200) {
+      topOffset = 200;
+    }
   }
 }
 
