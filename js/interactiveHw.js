@@ -9,42 +9,43 @@ $("html").click(function (event) {
 */
 
 // #2:create your own animation
-var offset = 0;
+var leftOffset = 0;
+var topOffset = 0;
 var direction = "right";
 
-$("#heading").offset({ left: offset, top: offset });
+$("#heading").offset({ left: leftOffset, top: topOffset });
 
 function moveHeading() {
   if (direction === "right") {
-    $("#heading").offset({ left: offset });
+    $("#heading").offset({ left: leftOffset });
 
-    offset++;
-    if (offset > 200) {
-      offset = 0;
+    leftOffset++;
+    if (leftOffset > 200) {
+      topOffset = 0;
       direction = "down";
     }
   } else if (direction === "down") {
-    $("#heading").offset({ top: offset });
+    $("#heading").offset({ top: topOffset });
 
-    offset++;
-    if (offset > 200) {
-      offset = 200;
+    topOffset++;
+    if (topOffset > 200) {
+      leftOffset = 200;
       direction = "left";
     }
   } else if (direction === "left") {
-    $("#heading").offset({ left: offset });
+    $("#heading").offset({ left: leftOffset });
 
-    offset--;
-    if (offset < 0) {
-      offset = 200;
+    leftOffset--;
+    if (leftOffset < 0) {
+      topOffset = 200;
       direction = "top";
     }
   } else if (direction === "top") {
-    $("#heading").offset({ top: offset });
+    $("#heading").offset({ top: topOffset });
 
-    offset--;
-    if (offset < 0) {
-      offset = 0;
+    topOffset--;
+    if (topOffset < 0) {
+      leftOffset = 0;
       direction = "right";
     }
   }
