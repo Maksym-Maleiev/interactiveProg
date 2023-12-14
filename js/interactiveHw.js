@@ -16,18 +16,20 @@ function moveHeading() {
   $("#heading").offset({ left: offset, top: offset });
 
   if (direction === "right") {
-    $("#heading").offset({ left: leftOffset });
+    $("#heading").offset({ left: offset });
 
-    leftOffset++;
-    if (leftOffset > 200) {
-      leftOffset = 200;
+    offset++;
+    if (offset > 200) {
+      offset = 0;
+      direction = "down";
     }
   } else if (direction === "down") {
-    $("heading").offset({ top: topOffset });
+    $("heading").offset({ top: offset });
 
-    topOffset++;
-    if (topOffset > 200) {
-      topOffset = 200;
+    offset++;
+    if (offset > 200) {
+      offset = 0;
+      direction = "left";
     }
   }
 }
