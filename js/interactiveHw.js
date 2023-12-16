@@ -75,7 +75,7 @@ var intervalId = setInterval(moveHeading, intervalTime);
 // })
   
 var clickNumber = 0;
-var newHeading = "You win🎉";
+var newHeading = "You Win🎉";
 
 $("#heading").click(function clickHandler() {
   for (var i = 0; i < 1; i++){
