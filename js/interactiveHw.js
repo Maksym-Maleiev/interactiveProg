@@ -56,27 +56,26 @@ var intervalId = setInterval(moveHeading, intervalTime);
 
 // #3: cancel the animation with a click
 
-// $("html").click(function () {
-//   $("#heading").offset({ left: leftOffset, top: topOffset });
-//   clearInterval(intervalId);
-// });
+$("html").click(function () {
+  $("#heading").offset({ left: leftOffset, top: topOffset });
+  clearInterval(intervalId);
+});
 
 // #4: create a "title clicker" game
 
-var clickNumber = 0;
-var newHeading = "You Win🎉";
+// var clickNumber = 0;
+// var newHeading = "You Win🎉";
 
-$("#heading").click(function clickHeading() {
-  for (var i = 0; i < 1; i++){
-    if (clickNumber === 2) {
-      $("#heading").text(newHeading);
-      $("#heading").offset({ left: leftOffset, top: topOffset });
-      clearInterval(intervalId);
-    } else {
-    setInterval(moveHeading, intervalTime++);
-    clickNumber++;
+// $("#heading").click(function clickHeading() {
+//   for (var i = 0; i < 1; i++){
+//     if (clickNumber === 2) {
+//       $("#heading").text(newHeading);
+//       clearInterval(intervalId);
+//     } else {
+//     setInterval(moveHeading, intervalTime++);
+//     clickNumber++;
 
-    console.log("Click " + clickNumber + "!");     
-      }
-    }
-  })
+//     console.log("Click " + clickNumber + "!");     
+//       }
+//     }
+//   })
