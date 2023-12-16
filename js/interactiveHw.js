@@ -70,6 +70,7 @@ $("#heading").click(function clickHeading() {
   for (var i = 0; i < 1; i++){
     if (clickNumber === 2) {
       $("#heading").text(newHeading);
+      $("#heading").offset({ left: leftOffset, top: topOffset });
       clearInterval(intervalId);
     } else {
     setInterval(moveHeading, intervalTime++);
