@@ -57,6 +57,10 @@ setInterval(moveHeading, 10);
 
 var intervalId = setInterval(moveHeading, 10);
 
-$("#heading").click(function () {
+var leftNon = 0;
+var topNon = 0;
+
+$("html").click(function () {
+  $("#heading").offset({ left: leftNon, top: topNon });
   clearInterval(intervalId);
 });
