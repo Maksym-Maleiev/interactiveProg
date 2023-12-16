@@ -64,3 +64,4 @@ $("html").click(function () {
   $("#heading").offset({ left: leftNon, top: topNon });
   clearInterval(intervalId);
 });
+
