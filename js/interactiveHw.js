@@ -15,6 +15,11 @@ var direction = "right";
 
 $("#heading").offset({ left: leftOffset, top: topOffset });
 
+$("html").click(function () {
+  $("#heading").offset({ left: leftOffset, top: topOffset });
+  clearInterval(intervalId);
+});
+
 function moveHeading() {
   if (direction === "right") {
     $("#heading").offset({ left: leftOffset });
@@ -51,16 +56,6 @@ function moveHeading() {
   }
 }
 
-setInterval(moveHeading, 10);
-
 // #3: cancel the animation with a click
 
 var intervalId = setInterval(moveHeading, 10);
-
-var offsetNon = 0;
-
-$("html").click(function () {
-  $("#heading").offset({ left: offsetNon, top: offsetNon });
-  clearInterval(intervalId);
-});
-
