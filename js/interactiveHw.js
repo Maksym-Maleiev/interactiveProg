@@ -66,8 +66,8 @@ var clickNumber = 0;
 
 $("#heading").click(function clickHandler() {
   for (var i = 0; i < 10; i++){
-    
-  }
+    setInterval(moveHeading, 20);
+    }
+  })
 
   console.log("Click " + clickNumber + "!");
-})
