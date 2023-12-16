@@ -73,7 +73,7 @@ var clickHandler = function () {
     }
   }
 
-  console.log("Click! " +  + " " + );
+  console.log("Click " + clickNumber + "!");
 }
 
 $("#heading").click(clickHandler);
