@@ -62,18 +62,12 @@ var intervalId = setInterval(moveHeading, 18);
 
 // #4: create a "title clicker" game
 
-var clickHandler = function () {
+var clickNumber = 0;
+
+$("#heading").click(function clickHandler() {
   for (var i = 0; i < 10; i++){
-    if () {
-      
-    }
+    
   }
-}
 
-$("#heading").click(clickHandler);
-
-// $("#heading").click(function (event) {
-//   for (var event = 0; event < 10; event++ ) {
-//     if()
-//   }
-// })
+  console.log("Click " + clickNumber + "!");
+})
