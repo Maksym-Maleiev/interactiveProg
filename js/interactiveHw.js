@@ -62,11 +62,21 @@ var intervalId = setInterval(moveHeading, 18);
 
 // #4: create a "title clicker" game
 
-var clickHanler = function (event) {
-  console.log("Click! " + event.pageX + " " + event.pageY);
+var clickNumber = 0;
+
+var clickHandler = function () {
+  for (var clickNumber = 0; clickNumber < 10; clickNumber++){
+    if (clickNumber > 10) {
+      alert("You win!!!");
+    } else {
+      console.log("Yeh, come on!")
+    }
+  }
+
+  console.log("Click! " +  + " " + );
 }
 
-$("#heading").click(clickHanler);
+$("#heading").click(clickHandler);
 
 // $("#heading").click(function (event) {
 //   for (var event = 0; event < 10; event++ ) {
