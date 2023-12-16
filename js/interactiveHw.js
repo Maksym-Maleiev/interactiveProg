@@ -70,7 +70,7 @@ $("#heading").click(function () {
   intervalTime /= 2;
   clickNumber++;
 
-  if (clickNumber > 3) {
+  if (clickNumber > 10) {
     $("#heading").text("You Win🎉");
       console.log("Well done!");
     } else {
