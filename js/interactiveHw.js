@@ -65,16 +65,30 @@ var intervalId = setInterval(moveHeading, intervalTime);
 var clickNumber = 0;
 var newHeading = "You Win🎉";
 
+// $("#heading").click(function () {
+//   for (var i = 0; i < 1; i++) {
+//     if (clickNumber === 4) {
+//       $("#heading").text(newHeading);
+//       clearInterval(intervalId);
+//     } else {
+//       setInterval(moveHeading, intervalTime++);
+//       clickNumber++;
+
+//       console.log("Click " + clickNumber + "!");
+//     }
+//   }
+// });
+
 $("#heading").click(function () {
   for (var i = 0; i < 1; i++) {
-    if (clickNumber === 4) {
-      $("#heading").text(newHeading);
-      clearInterval(intervalId);
-    } else {
+    if (clickNumber < 4) {
       setInterval(moveHeading, intervalTime++);
       clickNumber++;
 
       console.log("Click " + clickNumber + "!");
+    } else if (clickNumber === 4) {
+      $("#heading").text(newHeading);
+      clearInterval(intervalId);
     }
   }
 });
