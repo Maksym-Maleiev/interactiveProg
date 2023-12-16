@@ -51,11 +51,12 @@ function moveHeading() {
   }
 }
 
-// #3: cancel the animation with a click
-
 var intervalId = setInterval(moveHeading, 18);
+
+// #3: cancel the animation with a click
 
 // $("html").click(function () {
 //   $("#heading").offset({ left: leftOffset, top: topOffset });
 //   clearInterval(intervalId);
 // });
+
