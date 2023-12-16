@@ -52,3 +52,5 @@ function moveHeading() {
 }
 
 setInterval(moveHeading, 10);
+
+// #3:
