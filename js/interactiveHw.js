@@ -61,3 +61,7 @@ var intervalId = setInterval(moveHeading, 18);
 // });
 
 // #4: create a "title clicker" game
+
+$("#heading").click(function moveFaster () {
+  
+})
