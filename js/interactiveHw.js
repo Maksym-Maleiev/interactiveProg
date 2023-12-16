@@ -60,3 +60,4 @@ var intervalId = setInterval(moveHeading, 18);
 //   clearInterval(intervalId);
 // });
 
+// #4: create a "title clicker" game
