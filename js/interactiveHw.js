@@ -17,10 +17,10 @@ $("#heading").offset({ left: leftOffset, top: topOffset });
 
 // #3: cancel the animation with a click
 
-$("html").click(function () {
-  $("#heading").offset({ left: leftOffset, top: topOffset });
-  clearInterval(intervalId);
-});
+// $("html").click(function () {
+//   $("#heading").offset({ left: leftOffset, top: topOffset });
+//   clearInterval(intervalId);
+// });
 
 // -------------------------------------
 
