@@ -8,7 +8,7 @@ $("html").click(function (event) {
 });
 */
 
-// #2:create your own animation
+// #2: create your own animation
 var leftOffset = 0;
 var topOffset = 0;
 var direction = "right";
@@ -53,4 +53,4 @@ function moveHeading() {
 
 setInterval(moveHeading, 10);
 
-// #3:
+// #3: cancel the animation with a click
