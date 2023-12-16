@@ -66,9 +66,10 @@ var intervalId = setInterval(moveHeading, intervalTime);
 var clickNumber = 0;
 
 $("#heading").click(function clickHandler() {
-  for (var i = 0; i < 10; i++){
+  for (var i = 0; i < 1; i++){
     setInterval(moveHeading, intervalTime++);
+    clickNumber++;
+    
+    console.log("Click " + clickNumber + "!");
     }
   })
-
-  console.log("Click " + clickNumber + "!");
