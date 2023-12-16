@@ -62,4 +62,4 @@ function moveHeading() {
 
 // #3: cancel the animation with a click
 
-var intervalId = setInterval(moveHeading, 10);
+var intervalId = setInterval(moveHeading, 30);
