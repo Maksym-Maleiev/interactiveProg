@@ -68,10 +68,9 @@ var newHeading = "You Win🎉";
 $("#heading").click(function () {
   for (var i = 0; i < 1; i++) {
     if (clickNumber === 3) {
+      clearInterval(moveHeading);
       $("#heading").text(newHeading);
-      clearInterval(intervalId);
-
-      console.log("Well done!");
+          console.log("Well done!");
     } else {
       setInterval(moveHeading, intervalTime++);
       clickNumber++;
