@@ -54,3 +54,7 @@ function moveHeading() {
 setInterval(moveHeading, 10);
 
 // #3: cancel the animation with a click
+
+$("#heading").click(function () {
+  clearInterval(moveHeading);
+});
