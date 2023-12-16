@@ -51,7 +51,7 @@ function moveHeading() {
   }
 }
 
-var intervalTime = 35;
+var intervalTime = 30;
 var intervalId = setInterval(moveHeading, intervalTime);
 
 // #3: cancel the animation with a click
@@ -70,6 +70,7 @@ $("#heading").click(function clickHeading() {
   for (var i = 0; i < 1; i++){
     if (clickNumber === 9) {
       $("#heading").text(newHeading);
+      clearInterval(intervalId);
     } else {
     setInterval(moveHeading, intervalTime++);
     clickNumber++;
