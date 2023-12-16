@@ -64,16 +64,17 @@ var intervalId = setInterval(moveHeading, intervalTime);
 
 var clickNumber = 0;
 
-$("#heading").click(function () {    
-clearInterval(intervalId);
-    intervalTime++;
+$("#heading").click(function () { 
+  
+  clearInterval(intervalId);
+  intervalTime /= 2;
+  clickNumber++;
 
-  if (clickNumber > 2) {
+  if (clickNumber > 3) {
     $("#heading").text("You Win🎉");
       console.log("Well done!");
     } else {
-    setInterval(moveHeading, intervalTime);
-    clickNumber++;
+    intervalId = setInterval(moveHeading, intervalTime);
 
       console.log("Click " + clickNumber + "!");
     }
