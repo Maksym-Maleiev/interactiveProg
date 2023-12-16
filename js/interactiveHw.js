@@ -70,6 +70,8 @@ $("#heading").click(function () {
     if (clickNumber === 4) {
       $("#heading").text(newHeading);
       clearInterval(intervalId);
+
+      console.log("Well done!");
     } else {
       setInterval(moveHeading, intervalTime++);
       clickNumber++;
