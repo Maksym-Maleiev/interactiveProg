@@ -51,7 +51,7 @@ function moveHeading() {
   }
 }
 
-var intervalTime = 30;
+var intervalTime = 20;
 var intervalId = setInterval(moveHeading, intervalTime);
 
 // #3: cancel the animation with a click
@@ -68,9 +68,9 @@ var newHeading = "You Win🎉";
 
 $("#heading").click(function clickHeading() {
   for (var i = 0; i < 1; i++){
-    if (clickNumber === 9) {
-      $("#heading").text(newHeading);
+    if (clickNumber === 3) {
       clearInterval(intervalId);
+      $("#heading").text(newHeading);
     } else {
     setInterval(moveHeading, intervalTime++);
     clickNumber++;
